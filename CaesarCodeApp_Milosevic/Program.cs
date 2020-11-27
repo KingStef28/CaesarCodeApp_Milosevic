@@ -6,7 +6,7 @@ namespace CaesarCodeApp_Milosevic
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
         }
     }
 }
