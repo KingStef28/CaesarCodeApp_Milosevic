@@ -1,4 +1,5 @@
 ﻿using System;
+using CaesarCipherLibrary;
 
 namespace CaesarCodeApp_Milosevic
 {
