@@ -9,6 +9,7 @@ namespace CaesarCodeApp_Milosevic
         {
             Console.WriteLine("Inserisci una parola:");
             string plaintext = Console.ReadLine();
+            Console.WriteLine();
             int key;
             CaesarCode m1;
 
@@ -22,12 +23,20 @@ namespace CaesarCodeApp_Milosevic
 
                 m1 = new CaesarCode(plaintext, key);
 
+                Console.Clear();
+                Console.WriteLine("Criptando... Premere Invio per continuare...");
+                Console.ReadLine();
+                Console.Clear();
+
                 Console.WriteLine($"Il testo cifrato è: {m1.CipherText}");
+
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
+
+            Console.ReadLine();
         }
     }
 }
